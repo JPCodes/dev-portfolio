@@ -4,12 +4,19 @@
 
 #### By _**Jim Padilla**_
 
-## Description (TO DO)
+### Description (TO DO)
 
-This Rails 5 app that serves as a portfolio site.
+> This Rails 5 app that serves as a portfolio site.
 
 ## Heroku
 [Coming Soon](#)
+
+## Features
+
+- Realtime chat for comments
+- Blog
+- Portfolio
+- Drag and drop functionality in the interface
 
 ## Setup/Installation Requirements
 
