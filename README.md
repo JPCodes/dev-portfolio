@@ -1,24 +1,54 @@
-# README
+# _Rails Dev Portfolio_
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#### _Web Portfolio. March 2017_
 
-Things you may want to cover:
+#### By _**Jim Padilla**_
 
-* Ruby version
+## Description (TO DO)
 
-* System dependencies
+This Rails 5 app that serves as a portfolio site.
 
-* Configuration
+## Heroku
+[Coming Soon](#)
 
-* Database creation
+## Setup/Installation Requirements
 
-* Database initialization
+* _In the Terminal, run:_
+```
+git clone https://github.com/JPCodes/rails-dev-portfolio
+cd rails-dev-portfolio
+bundle install
+rake db:create
+rake db:migrate
+TO DO
+rails server
+```
+* _Then, in any modern browser, navigate to:_
+```
+localhost:3000
+```
 
-* How to run the test suite
+* _Give a user admin powers:_
+```
+TO DO
+```
+## Support and contact details
 
-* Services (job queues, cache servers, search engines, etc.)
+* _Github: [JPCodes](https://github.com/JPCodes)_
+* _LinkedIn: [Jim Padilla](https://www.linkedin.com/in/jpcodes)_
 
-* Deployment instructions
+## Technologies Used
 
-* ...
+TO DO
+* _Rails_
+  * _Rspec_
+  * _ActiveRecord_
+* _Ruby_
+* _JavaScript_
+* _Bootstrap_
+
+### License
+
+MIT
+
+Copyright (c) 2017 **_Jim Padilla_**
