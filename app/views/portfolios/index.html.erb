@@ -10,5 +10,9 @@
 
   <p><%= link_to "Edit #{portfolio_item.title}", edit_portfolio_path(portfolio_item) %></p>
 
+  <p>
+    <%= link_to "Delete #{portfolio_item}", portfolio, method: :delete, data: { confirm: 'Are you sure?' } %>
+  </p>
+
   <hr>
 <% end %>
