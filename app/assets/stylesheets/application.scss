@@ -1,5 +1,2 @@
 /* removed require tree/. so blog stylesheet doesn't overlap */
-
-.top a {
-  color: brown;
-}
+@import "bootstrap";
