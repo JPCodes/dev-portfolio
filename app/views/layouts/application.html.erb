@@ -16,11 +16,11 @@
 
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
-    
+
     <%= login_helper %>
 
-    <% if session[:source] %>
-      <p>Thanks for visiting from <%= session[:source] %></p>
-    <% end %>
+    <%= yield %>
+
+    <%= source_helper("application") %>
   </body>
 </html>
