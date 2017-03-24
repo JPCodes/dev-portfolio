@@ -1,0 +1,41 @@
+<%= form_for(@portfolio_item) do |f| %>
+  <% if @portfolio_item.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@portfolio_item.errors.count, "error") %> prohibited this @portfolio_item from being saved:</h2>
+
+      <ul>
+      <% @portfolio_item.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= f.label :subtitle %>
+    <%= f.text_field :subtitle %>
+  </div>
+
+  <div class="field">
+    <%= f.label :body %>
+    <%= f.text_area :body %>
+  </div>
+
+  <ul>
+    <%= f.fields_for :technologies do |technology_form| %>
+    <li>
+      <%= technology_form.label :name %>
+      <%= technology_form.text_field :name %>
+    </li>
+    <% end %>
+  </ul>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
