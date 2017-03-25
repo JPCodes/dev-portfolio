@@ -19,14 +19,12 @@
 
     <%# location: 'top' is css class?; for dynamic styles %>
     <%= render 'shared/application_nav', location: 'top' %>
-
-    <%= login_helper %>
-
+    
     <%= yield %>
 
-    <%= copyright_generator %>
     <%= source_helper("application") %>
 
+    <%= render 'shared/application_footer' %>
         </div>
       </div>
     </div>
