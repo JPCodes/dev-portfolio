@@ -36,6 +36,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 gem 'friendly_id', '~> 5.1.0'
+gem 'bootstrap', '~> 4.0.0.alpha6'
 gem 'devise'
 gem 'petergate', '~> 1.7'
 
