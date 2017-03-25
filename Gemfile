@@ -39,6 +39,7 @@ gem 'friendly_id', '~> 5.1.0'
 gem 'bootstrap', '~> 4.0.0.alpha6'
 gem 'devise'
 gem 'petergate', '~> 1.7'
+gem 'view_footer_copyright', git: 'https://github.com/JPCodes/copyright-generator-gem'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
