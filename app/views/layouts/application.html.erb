@@ -13,11 +13,12 @@
   </head>
 
   <body>
-    <%# location: 'top' is css class?; for dynamic styles %>
-    <%= render 'shared/nav', location: 'top' %>
+    <div class="site-wrapper">
+      <div class="site-wrapper-inner">
+        <div class="cover-container">
 
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+    <%# location: 'top' is css class?; for dynamic styles %>
+    <%= render 'shared/application_nav', location: 'top' %>
 
     <%= login_helper %>
 
@@ -25,5 +26,9 @@
 
     <%= copyright_generator %>
     <%= source_helper("application") %>
+
+        </div>
+      </div>
+    </div>
   </body>
 </html>
