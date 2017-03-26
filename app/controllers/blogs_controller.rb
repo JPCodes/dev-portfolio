@@ -6,7 +6,7 @@ class BlogsController < ApplicationController
     # "all:" (everyone) can an access show and index.
     # "user:" won't be able to do any CRUD functionality for blogs
     # "site_admin:" can do ":all" things
-  access all: [:show, :index], user: {except: [:destroy, :new, :create, :update, :edit]}, site_admin: :all
+  access all: [:show, :index], user: {except: [:destroy, :new, :create, :update, :edit, :toggle_status]}, site_admin: :all
 
   # GET /blogs
   # GET /blogs.json
