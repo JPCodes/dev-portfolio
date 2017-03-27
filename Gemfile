@@ -40,6 +40,8 @@ gem 'bootstrap', '~> 4.0.0.alpha6'
 gem 'devise'
 gem 'petergate', '~> 1.7'
 gem 'view_footer_copyright', git: 'https://github.com/JPCodes/copyright-generator-gem'
+gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.1'
+gem 'kaminari', '~> 1.0', '>= 1.0.1'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
