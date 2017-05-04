@@ -1,4 +1,4 @@
-# _Rails Dev Portfolio_
+# _Dev Portfolio (Work In Progress)_
 
 #### _Web Portfolio. March 2017_
 
