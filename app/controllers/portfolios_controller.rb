@@ -5,7 +5,7 @@ class PortfoliosController < ApplicationController
     access all: [:show, :index, :angular], user: {except: [:destroy, :new, :create, :update, :edit]}, site_admin: :all
 
   def index
-    @portfolio_items = Portfolio.all
+    @portfolio_items = Portfolio.positional
     # @portfolio_items = Portfolio.angular
     # @portfolio_items = Portfolio.ruby_on_rails
   end

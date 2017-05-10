@@ -15,6 +15,10 @@ class Portfolio < ApplicationRecord
     where(subtitle: 'Angular')
   end
 
+  def self.positional
+    order("position ASC")
+  end
+
   # Alternate, cooler syntax
     # Any name for scope, ex: could be :ruby_on_rails_stuff
   scope :ruby_on_rails, -> { where(subtitle: 'Ruby on Rails') }
