@@ -2,10 +2,10 @@ class PortfoliosController < ApplicationController
   before_action :set_portfolio_item, only: [:edit, :update, :show, :destroy]
   layout "portfolio"
 
-    access all: [:show, :index, :angular], user: {except: [:destroy, :new, :create, :update, :edit]}, site_admin: :all
+    access all: [:show, :index, :angular], user: {except: [:destroy, :new, :create, :update, :edit, :sort]}, site_admin: :all
 
   def index
-    @portfolio_items = Portfolio.all
+    @portfolio_items = Portfolio.positional
     # @portfolio_items = Portfolio.angular
     # @portfolio_items = Portfolio.ruby_on_rails
   end
@@ -42,6 +42,15 @@ class PortfoliosController < ApplicationController
         format.json { render json: @portfolio_item.errors, status: :unprocessable_entity }
       end
     end
+  end
+
+  def sort
+    # 'order' hash defined in CoffeeScript around line 31
+    params[:order].each do |key, value|
+      Portfolio.find(value[:id]).update(position: value[:position])
+    end
+
+    render nothing: true
   end
 
   def show
